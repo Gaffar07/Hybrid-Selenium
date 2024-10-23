@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>test</groupId>
+  <artifactId>test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+	  
+	  <!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+<dependency>
+    <groupId>com.beust</groupId>
+    <artifactId>jcommander</artifactId>
+    <version>1.82</version>
+</dependency>
+
+	  
+	  
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.5.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.3.0</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.25.0</version>
+</dependency>
+
+
+<dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>poi</artifactId>
+                 <version>3.9</version>
+          </dependency>
+          <dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>poi-ooxml</artifactId>
+                 <version>3.9</version>
+          </dependency>
+          <dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>poi-ooxml-schemas</artifactId>
+                 <version>3.9</version>
+          </dependency>
+          <dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>poi-scratchpad</artifactId>
+                 <version>3.9</version>
+          </dependency>
+          <dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>ooxml-schemas</artifactId>
+                 <version>1.1</version>
+          </dependency>
+
+          <dependency>
+                 <groupId>org.apache.poi</groupId>
+                 <artifactId>openxml4j</artifactId>
+                 <version>1.0-beta</version>
+          </dependency>
+          
+          <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<!--<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency> -->
+
+
+<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+
+  	 
+ 	<!-- 
+ 	<dependency>
+  		<groupId>com.PeopleGrove.AssignmentQA</groupId>
+  		<artifactId>com.PeopleGrove.AssignmentQA</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency> -->
+  	
+  </dependencies>
+  
+   <build>
+	   <plugins>
+	   <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version> <!-- Ensure this version or the latest stable version -->
+            <configuration>
+				
+				<suiteXmlFiles>
+                        <suiteXmlFile>D:\Gaffar\test\testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                <forkCount>1</forkCount> <!-- Adjust based on your needs -->
+                <reuseForks>true</reuseForks>
+                <argLine>-Xmx1024m</argLine> <!-- Adjust based on memory requirements -->
+                <useSystemClassLoader>false</useSystemClassLoader>
+                <includes>
+                    <include>comm.TestEngine</include> <!-- Adjust to match your test classes -->
+                </includes>
+            </configuration>
+        </plugin>
+	   
+	   
+	
+    </plugins>
+	  
+	  
+  </build>
+  
+  
+  
+  
+</project>

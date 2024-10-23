@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suitecodekru]">
+  <test thread-count="5" name="ActiveHealthV1.5_PlatEssentialFF_003(failed)">
+    <parameter name="ScriptReference" value="CreateFamilyNSTPFlowPricing"/>
+    <parameter name="ScenarioID" value="ActiveHealthV1.5_PlatEssentialFF_004"/>
+    <parameter name="Description" value="Positive flow for various family construct"/>
+    <parameter name="Product" value="Positive"/>
+    <parameter name="Module" value="TCS"/>
+    <parameter name="ScenarioUID" value="ActiveHealthV1.5_PlatEssentialFF_004"/>
+    <classes>
+      <class name="comm.testExecutionsuite">
+        <methods>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- comm.testExecutionsuite -->
+    </classes>
+  </test> <!-- ActiveHealthV1.5_PlatEssentialFF_003(failed) -->
+</suite> <!-- Failed suite [suitecodekru] -->

@@ -1,0 +1,1 @@
+{"uuid":"1261a2ab-5144-4f0d-bbc4-30e464682a3b","name":"DynamicSuite","children":["4e837c05-f3fc-4da4-81e4-65c032bc25f2"],"befores":[],"afters":[{"name":"clean","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1726920862819,"stop":1726920862819}],"start":1726920856930,"stop":1726920862819}

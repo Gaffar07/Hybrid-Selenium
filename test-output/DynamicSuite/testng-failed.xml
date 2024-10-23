@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DynamicSuite]">
+  <parameter name="BrowserName" value="EDGE"/>
+  <parameter name="LoBName" value="pricing"/>
+  <parameter name="BrowTestScenario_RepositoryFileIndexserName" value="TCS_Return\TestDataSuite\CalculationData\0002_TestDataSuite.xlsx"/>
+  <parameter name="TestData_RepositoryFile" value="TCS_Return\TestScenarioSuite\CalculationScanerio\0003_ScenarioSuite.xlsx"/>
+  <listeners>
+    <listener class-name="comm.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Group Active Health_Burning Cost_Revised_001(failed)">
+    <parameter name="ScriptReference" value="CreateGroupPricingFlow++"/>
+    <parameter name="ScenarioID" value="Group Active Health_Burning Cost_Revised_001"/>
+    <parameter name="Description" value="Positive flow for various family construct"/>
+    <parameter name="Product" value="Positive"/>
+    <parameter name="Module" value="TCS"/>
+    <parameter name="ScenarioUID" value="Group Active Health_Burning Cost_Revised_001"/>
+    <classes>
+      <class name="comm.testExecutionsuite">
+        <methods>
+          <include name="close"/>
+          <include name="launch"/>
+          <include name="setup1"/>
+          <include name="setup"/>
+          <include name="demo" invocation-numbers="0"/>
+          <include name="clean"/>
+          <include name="Status"/>
+        </methods>
+      </class> <!-- comm.testExecutionsuite -->
+    </classes>
+  </test> <!-- Group Active Health_Burning Cost_Revised_001(failed) -->
+</suite> <!-- Failed suite [DynamicSuite] -->
